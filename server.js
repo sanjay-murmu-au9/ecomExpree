@@ -15,7 +15,7 @@ process.on('uncaughtException', err => {
 })
 
 // Setting up config file
-if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config({ path: 'backend/config/config.env' })
+if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: 'backend/config/config.env' })
 
 // dotenv.config({ path: 'backend/config/config.env' })
 
@@ -33,7 +33,7 @@ cloudinary.config({
 const PORT = process.env.PORT || 5000;
 
 
-if (process.env.NODE_ENV === "PRODUCTION") {
+if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 
     const path = require('path');

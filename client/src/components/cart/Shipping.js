@@ -46,7 +46,7 @@ const Shipping = ({ history }) => {
 
                     setPincode(e.target.value)
                 } else {
-                    console.log(res, "==>")
+                    // console.log(res, "==>")
                     setPincode(res[0].PostOffice[0].Pincode)
                 }
 
