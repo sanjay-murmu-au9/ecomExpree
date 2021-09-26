@@ -30,7 +30,7 @@ const Shipping = ({ history }) => {
     const submitHandler = (e) => {
         e.preventDefault()
 
-        dispatch(saveShippingInfo({ address, city, phoneNo, postalCode, state, userName }))
+        dispatch(saveShippingInfo({ address, city, phoneNo, pincode, state, userName }))
         history.push('/confirm')
     }
 
